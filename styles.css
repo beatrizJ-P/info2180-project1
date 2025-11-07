@@ -18,6 +18,12 @@ body {
 
 /* Header styles */
 
+header, h1{
+    grid-row: 1;
+    background-color: white;
+    font-size: 18px;
+}
+
 header .container {
     display: flex;
     flex-direction: row;
@@ -26,14 +32,22 @@ header .container {
     padding: 1rem 0;
 }
 
-
 nav ul {
     display: flex;
     list-style: none;
 }
 
 nav li {
-    padding-left: 1em;
+    padding-left: 2rem;
+}
+
+nav a{
+    color: #6b7280;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #5A67D8;
 }
 
 
@@ -41,7 +55,21 @@ nav li {
 
 /* Main styles */
 
+main {
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: repeat(auto);
+}
+
+
+
+
 /* 'Hero Overview' section styles */
+
+.overview-hero {
+    grid-row: 1;
+    background-color: #E2E8F0;
+}
 
 .overview-hero .container {
     display: grid;
@@ -69,10 +97,32 @@ nav li {
 
 /* 'Learn About' section styles */
 
+.learn-about {
+    grid-row: 2;
+    padding-bottom: 1.5rem;
+}
+
+.learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px #E2E8F0;
+    padding: 1rem;
+}
+
+.card h3 {
+    font-size: 21px;
+    color: #48BB78;
 }
 
 .card img {
@@ -84,6 +134,11 @@ nav li {
 
 
 /* 'Testing' section styles */
+.testing {
+    grid-row: 3;
+    background-color: #4A5568;
+    color: white;
+}
 
 .testing .container {
     display: grid;
@@ -100,15 +155,36 @@ nav li {
     grid-column: 2;  
 }
 
+.cta a{
+    background-color: #48BB78;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
 
 
 
 /* 'Recent Stories' section styles */
 
+.stories {
+    grid-row: 4;
+}
+
 .stories .container{
     display: flex;
     flex-direction: column;
     padding: 2rem 1.5rem;
+}
+
+.stories h2, a {
+    color: #5A67D8;
+    text-decoration: none;
+}
+
+.stories h3 {
+    font-size: 18px;
 }
 
 article {
@@ -134,10 +210,22 @@ article img {
 
 /* 'Newsletter' section styles */
 
+.newsletter {
+    grid-row: 5;
+    background-color: #48BB78;
+    color: white;
+}
+
 .newsletter .container {
     display: block;
     text-align: center;
-    padding: 2rem ;
+    padding: 2rem 0 4rem;
+}
+
+.newsletter p {
+    max-width: 500px;
+    text-align: left;
+    margin: 0 auto 1.5em ;
 }
 
 .newsletter form {
@@ -152,6 +240,7 @@ article img {
     border: none;
     border-radius: 5px;
 }
+
 .newsletter button {
     background-color: #5A67D8;
     color: white;
@@ -169,3 +258,8 @@ article img {
 
 
 /* Footer styles */
+footer {
+    grid-row: 3;
+    background-color: #4A5568;
+    color: white;
+}
