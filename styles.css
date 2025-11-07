@@ -16,3 +16,156 @@ body {
 
 
 
+/* Header styles */
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding-left: 1em;
+}
+
+
+
+
+/* Main styles */
+
+/* 'Hero Overview' section styles */
+
+.overview-hero .container {
+    display: grid;
+    grid-template-columns: 25% auto;
+    place-items: center;
+    padding: 1em 1.5em;
+}
+
+.overview-hero-image {
+    grid-column: 1;
+}
+
+.overview-hero-image img{
+    width: 100%;
+    height: auto;
+}
+
+.overview-hero-text {
+    grid-column: 2;
+    padding: 1.5em 2em;
+}
+
+
+
+
+/* 'Learn About' section styles */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: 47%;
+}
+
+
+
+
+/* 'Testing' section styles */
+
+.testing .container {
+    display: grid;
+    grid-template-columns: auto 360px;
+    place-items: center;
+   padding: 4rem 0 6rem;
+}
+
+.testing-description {
+    grid-column: 1;
+}
+
+.cta {
+    grid-column: 2;  
+}
+
+
+
+
+/* 'Recent Stories' section styles */
+
+.stories .container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+}
+
+article {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+article img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    margin-right: 3rem;
+}
+
+.article-body h3{
+    max-width: 40rem;
+}
+
+
+
+
+/* 'Newsletter' section styles */
+
+.newsletter .container {
+    display: block;
+    text-align: center;
+    padding: 2rem ;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.newsletter input {
+    width: 15rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.newsletter button {
+    background-color: #5A67D8;
+    color: white;
+    padding: 1rem 2.5rem;
+    margin-left: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+/* Newsletter Message styles */
+
+
+
+
+/* Footer styles */
