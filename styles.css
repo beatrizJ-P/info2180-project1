@@ -219,7 +219,7 @@ article img {
 .newsletter .container {
     display: block;
     text-align: center;
-    padding: 2rem 0 4rem;
+    margin: 3rem auto 4rem;
 }
 
 .newsletter p {
@@ -250,14 +250,25 @@ article img {
     border-radius: 5px;
 }
 
-
-
 /* Newsletter Message styles */
+
+.error {
+    color: #cc3d3d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.success {
+    color: #f2faf5;
+    font-weight: bold;
+    margin-top: 10px;
+}
 
 
 
 
 /* Footer styles */
+
 footer {
     grid-row: 3;
     background-color: #4A5568;
