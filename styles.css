@@ -144,7 +144,7 @@ main {
     display: grid;
     grid-template-columns: auto 360px;
     place-items: center;
-   padding: 4rem 0 6rem;
+   padding: 5rem 0 7rem;
 }
 
 .testing-description {
